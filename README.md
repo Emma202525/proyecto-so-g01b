@@ -7,13 +7,15 @@
 Montar dos máquinas virtuales con Linux en VirtualBox, configurarlas, publicar en Docker Hub una imagen propia, desplegarla en Kubernetes y documentar todo el proceso en este sitio web.
 
 ## Integrante y roles asumidos
+
 | Integrante | Parte del proyecto |
-|---|---|
+| --- | --- |
 | Emma D. Álvarez Orozco | Coordinación y repositorio, máquinas virtuales y red, seguridad y usuarios, scripts y procesos, Docker, Kubernetes y sitio web |
 
 ## Distribuciones asignadas (Subgrupo 1B)
+
 | VM gráfica (`g01b-grafica`) | VM de consola (`g01b-consola`) | Imagen base del Dockerfile |
-|---|---|---|
+| --- | --- | --- |
 | Kubuntu | Debian | Ubuntu |
 
 La versión elegida y su verificación están en la [ficha de versión](plan/ficha-version.md). La planeación y cronograma están en el [plan de trabajo](plan/plan-de-trabajo.md).

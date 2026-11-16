@@ -1,0 +1,57 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+.page-header {
+  background-color: #f8a5c2;
+  background-image: linear-gradient(120deg, #ff9a9e 0%, #fecfef 55%, #f78fb3 100%);
+  color: #4a2333;
+}
+
+.project-name {
+  color: #3d1c2a;
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.4);
+}
+
+.project-tagline {
+  color: #572b3e;
+  opacity: 0.95;
+}
+
+.btn {
+  color: #4a2333;
+  background-color: rgba(255, 255, 255, 0.45);
+  border-color: rgba(74, 35, 51, 0.25);
+}
+
+.btn:hover {
+  color: #2d121d;
+  background-color: rgba(255, 255, 255, 0.75);
+  border-color: rgba(74, 35, 51, 0.4);
+}
+
+.main-content h1,
+.main-content h2,
+.main-content h3 {
+  color: #c44569;
+}
+
+.main-content h2 {
+  border-bottom: 2px solid #f8a5c2;
+  padding-bottom: 0.3em;
+}
+
+.main-content table th {
+  background-color: #ffeef4;
+  color: #833450;
+  border-color: #f8c2d4;
+}
+
+.main-content table td {
+  border-color: #f8d7e3;
+}
+
+.main-content a {
+  color: #d65a7e;
+}

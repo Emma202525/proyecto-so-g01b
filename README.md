@@ -35,7 +35,7 @@ La versión elegida y su verificación están en la [ficha de versión](plan/fic
 
 ## Uso de inteligencia artificial
 
-Para la estructuración inicial del repositorio en GitHub Pages y la revisión de redacción técnica de la documentación se utilizó apoyo de herramientas de IA generativa. Todas las configuraciones en máquinas virtuales, evidencias, comandos y videos son de autoría propia.
+Para el desarrollo de la estructura de este sitio web en GitHub Pages, la personalización de estilos y la orientación general en el seguimiento de las guías del proyecto, se utilizó el apoyo de la herramienta de inteligencia artificial Gemini. Todas las configuraciones en las máquinas virtuales, particionado, ejecución de comandos en terminal, evidencias gráficas y videos son de autoría propia.
 
 ## Repositorio
 

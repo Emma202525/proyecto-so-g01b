@@ -1,3 +1,4 @@
+
 **Subgrupo 1B · Entrega individual.** Este sitio documenta el desarrollo del proyecto final de Sistemas Operativos (750001C) en la Universidad del Valle, Semestre 2026-2. No es un sitio oficial de la Universidad del Valle.
 
 ## Objetivo

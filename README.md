@@ -20,10 +20,19 @@ La versión elegida y su verificación están en la [ficha de versión](plan/fic
 
 ## Páginas del proyecto
 
-* [Sprint 0 · Plan de trabajo](plan/plan-de-trabajo.md) y [Ficha de versión](plan/ficha-version.md)
-* Sprint 1 · Montaje *(en preparación)*
-* Sprint 2 · Servicios *(pendiente)*
-* Sprint 3 · Cierre *(pendiente)*
+- [Sprint 0 · Plan de trabajo](plan/plan-de-trabajo.md) y [Ficha de versión](plan/ficha-version.md)
+- Sprint 1 · Montaje *(en preparación)*
+- Sprint 2 · Servicios *(pendiente)*
+- Sprint 3 · Cierre *(pendiente)*
+
+## Capturas del Sprint 1 (`g01b-consola`)
+
+Evidencias de configuración y verificación de la máquina virtual en Debian 13 (`g01b-consola`):
+
+| Captura 1 | Captura 2 | Captura 3 |
+| --- | --- | --- |
+| ![Captura 1 del Sprint 1](sprint%201%20capturas/1795563075590-c1aecd66-892a-416c-be16-d90ef3702f1f_1.jpg) | ![Captura 2 del Sprint 1](sprint%201%20capturas/1795563075590-c1aecd66-892a-416c-be16-d90ef3702f1f_2.jpg) | ![Captura 3 del Sprint 1](sprint%201%20capturas/1795563075590-c1aecd66-892a-416c-be16-d90ef3702f1f_3.jpg) |
+| *Verificación 1 en `g01b-consola`* | *Verificación 2 en `g01b-consola`* | *Verificación 3 en `g01b-consola`* |
 
 ## Cuadro comparativo del instalador
 

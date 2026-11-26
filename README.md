@@ -21,16 +21,16 @@ La versión elegida y su verificación están en la [ficha de versión](plan/fic
 ## Páginas del proyecto
 
 - [Sprint 0 · Plan de trabajo](plan/plan-de-trabajo.md) y [Ficha de versión](plan/ficha-version.md)
-- **Sprint 1 · Montaje** *(en curso — configuración y capturas de `g01b-consola` en Debian 13 cargadas; video de demostración pendiente)*
+- **Sprint 1 · Montaje** *(completado — configuración de `g01b-grafica` y `g01b-consola`, capturas cargadas y [video de demostración en YouTube](https://youtu.be/d89MGlPl4Uw) publicado)*
 - **Sprint 2 · Servicios** *(en preparación — consolidación de servicios y comparativa técnica)*
 - **Sprint 3 · Cierre** *(pendiente)*
 
-## Avances del Sprint 1 (`g01b-consola` · Debian 13)
+## Avances del Sprint 1 (`g01b-grafica` · Kubuntu y `g01b-consola` · Debian 13)
 
-- **Máquina virtual y usuario:** VM `g01b-consola` configurada en VirtualBox con Debian 13 y usuario `emma`.
+- **Máquinas virtuales y usuario:** VMs `g01b-grafica` (Kubuntu) y `g01b-consola` (Debian 13) configuradas en VirtualBox con usuario `emma`.
 - **Particiones y snapshots:** Esquema de particiones (`/`, `swap`, `/home`, `/var`), adaptadores de red configurados (Adaptador 1 en NAT y Adaptador 2 en Solo-anfitrión) e instantáneas de instalación limpia creadas en VirtualBox.
-- **Verificación en terminal:** Comprobación de discos, particiones, memoria y red mediante comandos en consola (`lsblk`, `df -h`, `free -h`, `ip link`, `ip -br a`, `hostnamectl` y `systemctl status` con servicio SSH activo).
-- **Evidencias y repositorio:** Capturas con prompt visible subidas a `sprint 1 capturas` en el repositorio (`proyecto-so-g01b`) junto con las actualizaciones de documentación y estilos (`plan/ficha-version.md`, `assets/ css/style.scss`, `_config.yml`). Video de demostración (máximo 3 minutos) por grabar.
+- **Verificación en terminal:** Comprobación de identidad, discos, particiones, memoria y red en ambas máquinas mediante comandos en consola (`hostnamectl`, `whoami`, `lsblk`, `df -h`, `free -h` e `ip -br a`).
+- **Evidencias, video y repositorio:** Capturas con prompt visible subidas a `sprint 1 capturas` en el repositorio (`proyecto-so-g01b`), documentación actualizada (`plan/ficha-version.md`, `assets/ css/style.scss`, `_config.yml`) y video de demostración del Sprint 1 completado y publicado en YouTube: [https://youtu.be/d89MGlPl4Uw](https://youtu.be/d89MGlPl4Uw) (duración: 2 minutos y 34 segundos).
 
 ### Capturas del Sprint 1 (`g01b-consola` · Debian 13)
 
@@ -44,21 +44,21 @@ Evidencias de configuración y verificación de la máquina virtual en Debian 13
 ## Sprint 2 · Servicios *(en preparación)*
 
 - **Enfoque de la fase:** Consolidación de servicios en las máquinas virtuales y completado de la comparativa técnica entre las distribuciones del proyecto (Kubuntu en `g01b-grafica`, Debian 13 en `g01b-consola` y base Ubuntu).
-- **Base del Sprint 1:** Se apoya en las máquinas virtuales creadas en VirtualBox, los adaptadores de red y snapshots configurados, las capturas subidas a `sprint 1 capturas` y la estructura publicada en `proyecto-so-g01b`.
+- **Base del Sprint 1:** Se apoya en las máquinas virtuales creadas en VirtualBox, los adaptadores de red y snapshots configurados, las capturas subidas a `sprint 1 capturas`, el video del Sprint 1 ([https://youtu.be/d89MGlPl4Uw](https://youtu.be/d89MGlPl4Uw)) y la estructura publicada en `proyecto-so-g01b`.
 
 ## Cuadro comparativo (Sprint 1 y Sprint 2 · Kubuntu y Debian 13)
 
-| Criterio / Concepto | Sprint 1 · Montaje (`g01b-consola` · Debian 13) | Sprint 2 · Servicios y comparativa (Kubuntu / Debian 13) |
+| Criterio / Concepto | Sprint 1 · Montaje (`g01b-grafica` · Kubuntu y `g01b-consola` · Debian 13) | Sprint 2 · Servicios y comparativa (Kubuntu / Debian 13) |
 | --- | --- | --- |
 | Distribución y versión | Debian 13 (`g01b-consola`) / Kubuntu (`g01b-grafica`) | Contrastar comportamiento y servicios entre Kubuntu y Debian 13 (con base Ubuntu en Dockerfile para etapas posteriores) |
-| Estado de la fase | Configuración y 3 capturas `.jpg` cargadas en `sprint 1 capturas`; video de máximo 3 min pendiente | En preparación (consolidación de servicios y criterios comparativos) |
+| Estado de la fase | Completado: configuración y capturas `.jpg` en `sprint 1 capturas`, más [video de demostración en YouTube](https://youtu.be/d89MGlPl4Uw) (2:34) publicado | En preparación (consolidación de servicios y criterios comparativos) |
 | Instalador y ficha de versión | Documentación de versión actualizada en `plan/ficha-version.md` | Completar y contrastar instaladores de Kubuntu y Debian 13 |
-| Herramienta de particionado | Particiones (`/`, `swap`, `/home`, `/var`), verificación en consola y snapshots en VirtualBox | Documentar y comparar herramientas de particionado en ambas distribuciones |
-| Comando para instalar y actualizar paquetes | Entorno base en Debian 13 | Documentar y comparar comandos de gestión de paquetes entre Kubuntu y Debian 13 |
-| Red y firewall | Adaptador 1 (NAT), Adaptador 2 (Solo-anfitrión) e interfaces `lo`, `enp0s3`, `enp0s8` | Detallar y comparar configuración de firewall y servicios de red |
-| Grupo de administradores | Usuario `emma` configurado en `g01b-consola` | Verificar y comparar grupos de administración en Kubuntu y Debian 13 |
-| Comando para iniciar y detener servicios | `systemctl` (`systemctl status` con servicio SSH activo) | Profundizar gestión y control de servicios (`systemctl`) en el Sprint 2 |
-| Gestión web, rutas y control de cambios | Sitio en GitHub Pages (`_config.yml`, `assets/ css/style.scss`, `README.md`) y carga web con cuidado en rutas con espacios (`sprint%201%20capturas`) y nombres de archivo | Mantener actualizada la documentación de servicios y evidencias en el sitio web |
+| Herramienta de particionado | Particiones (`/`, `swap`, `/home`, `/var`), verificación en consola (`lsblk`, `df -h`, `free -h`) y snapshots en VirtualBox | Documentar y comparar herramientas de particionado en ambas distribuciones |
+| Comando para instalar y actualizar paquetes | Entorno base en Kubuntu y Debian 13 | Documentar y comparar comandos de gestión de paquetes entre Kubuntu y Debian 13 |
+| Red y firewall | Adaptador 1 (NAT), Adaptador 2 (Solo-anfitrión), interfaces `lo`, `enp0s3`, `enp0s8` y verificación con `ip -br a` | Detallar y comparar configuración de firewall y servicios de red |
+| Grupo de administradores | Usuario `emma` configurado y verificado (`whoami`, `hostnamectl`) en `g01b-grafica` y `g01b-consola` | Verificar y comparar grupos de administración en Kubuntu y Debian 13 |
+| Comando para iniciar y detener servicios | Verificación de entorno y servicios en terminal (`systemctl`) | Profundizar gestión y control de servicios (`systemctl`) en el Sprint 2 |
+| Gestión web, rutas y control de cambios | Sitio en GitHub Pages (`_config.yml`, `assets/ css/style.scss`, `README.md`), enlace de video [https://youtu.be/d89MGlPl4Uw](https://youtu.be/d89MGlPl4Uw) y rutas en `sprint%201%20capturas` | Mantener actualizada la documentación de servicios y evidencias en el sitio web |
 
 ## Conclusiones
 
@@ -71,7 +71,3 @@ Para el desarrollo de la estructura de este sitio web en GitHub Pages, la person
 ## Repositorio
 
 [https://github.com/Emma202525/proyecto-so-g01b](https://github.com/Emma202525/proyecto-so-g01b)
-
----
-
-Proyecto académico del curso Sistemas Operativos 750001C · Universidad del Valle.
